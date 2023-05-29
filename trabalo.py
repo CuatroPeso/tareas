@@ -16,17 +16,14 @@ while kino:
             except ValueError:
                 print("tamalo master")
         list_numfavs.append(numfav)
-    if numfav>=49:
-        print("Por favor lea bien las instrucciones")
+    kino=False
+    print("Sus numeros favoritos fueron",list_numfavs)
+    print("Los numeros para acertar fueron",list_num)
+    cuea = 0
+    for numfav in list_numfavs:
+        if numfav in list_num:
+            cuea = cuea+1
+    if cuea == 5:
+        print("Wena conchetumare te sacaste el kino")
     else:
-        kino=False
-        print("Sus numeros favoritos fueron",list_numfavs)
-        print("Los numeros para acertar fueron",list_num)
-        cuea = 0
-        for numfav in list_numfavs:
-            if numfav in list_num:
-                cuea = cuea+1
-        if cuea == 5:
-            print("Wena conchetumare te sacaste el kino")
-        else:
-            print("No hay kino para ti!>:c")
+        print("No hay kino para ti!>:c")
