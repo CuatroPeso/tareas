@@ -1,12 +1,12 @@
 import random
 kino=True
-list_num = []
-for a in range(5):
-    num_real=random.randint(1, 49)
-    list_num.append(num_real)
-list_numfavs = []
+list_num = []#Lista de numeros aleatorios
+for a in range(5):#El ciclo para crear los numeros
+    num_real=random.randint(1, 49)#Creacion de numeros
+    list_num.append(num_real)#Agregar numeros a la lista
+list_numfavs = []#Lista numeros del usuario
 while kino:
-    for b in range(5):
+    for b in range(5):#Ciclo para pedir los 5 numeros
         while True:
             try:
                 numfav = int(input("Escoja sus numeros favoritos entre 1 y 49: "))
