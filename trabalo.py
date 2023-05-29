@@ -23,6 +23,7 @@ cuea = 0 #Contador para ver cuantos numeros acerto el usuario
 for numfav in list_numfavs: #Revisa cada numero del usuario
     if numfav in list_num: #Si el numero esta en la lista de numero entonces aumenta el contador
         cuea = cuea+1
+        list_num.remove(numfav) #Elimina el numero de la lista random para que no se vuelva a comprobar
 if cuea == 5: #Si el contador esta a 5, significa que el usuario acerto a todos lo numeros
     print("Wena conchetumare te sacaste el kino")
 else:
