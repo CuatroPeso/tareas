@@ -25,6 +25,6 @@ for numfav in list_numfavs: #Revisa cada numero del usuario
         cuea = cuea+1
         list_num.remove(numfav) #Elimina el numero de la lista random para que no se vuelva a comprobar
 if cuea == 5: #Si el contador esta a 5, significa que el usuario acerto a todos lo numeros
-    print("Wena conchetumare te sacaste el kino")
+    print("Wena te sacaste el kino")
 else:
     print("No hay kino para ti!>:c")
